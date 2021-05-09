@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5190407473251651269
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7228746449748505415}
+  - component: {fileID: 4386687473563128060}
+  m_Layer: 0
+  m_Name: Maze
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7228746449748505415
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5190407473251651269}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.007, z: -0.021}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4386687473563128060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5190407473251651269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fb4a5bfb474e4a06b9e98338eae9762, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  passagePrefab: {fileID: -4984563971985741487, guid: 626c820829b19439b9ed2a530815d4f4, type: 3}
+  wallPrefabs:
+  - {fileID: -4854309313632108020, guid: e56aae05353a54fe98f25e75d5866ca2, type: 3}
+  - {fileID: 6657779221569100899, guid: 1b7e551a27add40c69c8d382ce1f7ac3, type: 3}
+  - {fileID: 6462427612895141727, guid: 3caf6803f847843d38a61fc4b9ad9a34, type: 3}
+  - {fileID: 4808630038361900337, guid: 129886aacdc9b47b4b128f6210f16a8c, type: 3}
+  - {fileID: -4854309313632108020, guid: e56aae05353a54fe98f25e75d5866ca2, type: 3}
+  - {fileID: -4854309313632108020, guid: e56aae05353a54fe98f25e75d5866ca2, type: 3}
+  - {fileID: -4854309313632108020, guid: e56aae05353a54fe98f25e75d5866ca2, type: 3}
+  - {fileID: -4854309313632108020, guid: e56aae05353a54fe98f25e75d5866ca2, type: 3}
+  - {fileID: -4854309313632108020, guid: e56aae05353a54fe98f25e75d5866ca2, type: 3}
+  - {fileID: -4854309313632108020, guid: e56aae05353a54fe98f25e75d5866ca2, type: 3}
+  cellPrefab: {fileID: 5099643606282362002, guid: bc1897e0c1719437ab11ee9acf661a0a, type: 3}
+  generationStepDelay: 0.01
+  size:
+    x: 20
+    z: 20
