@@ -61,4 +61,7 @@ MonoBehaviour:
     x: 20
     z: 20
   doorPrefab: {fileID: 7876551031753261567, guid: 7febe4f5cec5e4392983ef6bb113c1db, type: 3}
+  roomSettings:
+  - floorMaterial: {fileID: 0}
+    wallMaterial: {fileID: 0}
   doorProbability: 0.1
