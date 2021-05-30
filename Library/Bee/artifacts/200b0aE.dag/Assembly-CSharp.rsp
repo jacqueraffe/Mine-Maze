@@ -333,6 +333,7 @@
 "Assets/Scenes/Scripts/MazeDoor.cs"
 "Assets/Scenes/Scripts/MazePassage.cs"
 "Assets/Scenes/Scripts/MazeWall.cs"
+"Assets/Scenes/Scripts/Player.cs"
 -langversion:9.0
 
 /deterministic

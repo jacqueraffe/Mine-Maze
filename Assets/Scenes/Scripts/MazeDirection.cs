@@ -53,4 +53,12 @@ public static class MazeDirections {
 		return rotations[(int)direction];
 	}
 	
+	public static MazeDirection GetNextClockwise (this MazeDirection direction) {
+		return (MazeDirection)(((int)direction + 1) % Count);
+	}
+
+	public static MazeDirection GetNextCounterclockwise (this MazeDirection direction) {
+		return (MazeDirection)(((int)direction + Count - 1) % Count);
+	}
+
 }
