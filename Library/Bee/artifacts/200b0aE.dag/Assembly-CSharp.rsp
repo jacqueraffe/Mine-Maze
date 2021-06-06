@@ -330,7 +330,6 @@
 "Assets/Scenes/Scripts/MazeCell.cs"
 "Assets/Scenes/Scripts/MazeCellEdge.cs"
 "Assets/Scenes/Scripts/MazeDirection.cs"
-"Assets/Scenes/Scripts/MazeDoor.cs"
 "Assets/Scenes/Scripts/MazePassage.cs"
 "Assets/Scenes/Scripts/MazeWall.cs"
 "Assets/Scenes/Scripts/Player.cs"
