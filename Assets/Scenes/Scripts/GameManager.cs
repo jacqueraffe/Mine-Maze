@@ -23,6 +23,8 @@ public class GameManager : MonoBehaviour {
 	}
 
 	private IEnumerator BeginGame () {
+		Camera.main.transform.position = new Vector3(0,10,0);
+		Camera.main.transform.eulerAngles = new Vector3(90,0,0);
 		Camera.main.clearFlags = CameraClearFlags.Skybox;
 		Camera.main.rect = new Rect(0f, 0f, 1f, 1f);
 		mazeInstance = Instantiate(mazePrefab) as Maze;
