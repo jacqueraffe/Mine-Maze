@@ -23,9 +23,11 @@ public class Player : MonoBehaviour {
 	public void SetLocation (MazeCell cell) {
 		lastPosition = cell.transform.localPosition;
 		currPosition = lastPosition;
+		transform.localPosition = lastPosition;
         translationFactor = 1.0f;
 		currentCell = cell;
 	}
+	
 	private void SetLocationLerp(MazeCell cell) {
 		lastPosition = transform.localPosition;
 		currPosition = cell.transform.localPosition;
