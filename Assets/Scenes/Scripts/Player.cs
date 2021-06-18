@@ -10,6 +10,11 @@ public class Player : MonoBehaviour {
 
 	private MazeDirection currentDirection;
 
+    private float rotationFactor = 1.0f;
+    private float rotationSpeed = 6.0f;
+    private Quaternion lastRotation = Quaternion.identity;
+    private Quaternion currRotation = Quaternion.identity;
+
 	public void SetLocation (MazeCell cell) {
 		currentCell = cell;
 		transform.localPosition = cell.transform.localPosition;
@@ -24,11 +29,16 @@ public class Player : MonoBehaviour {
 	}
 
 	private void Look (MazeDirection direction) {
-		transform.localRotation = direction.ToRotation();
+		rotationFactor = 0.0f;
+        lastRotation = transform.localRotation;
+        currRotation = direction.ToRotation();
 		currentDirection = direction;
 	}
 
 	private void Update () {
+		rotationFactor += Time.deltaTime * rotationSpeed;
+        transform.localRotation = Quaternion.Lerp(lastRotation, currRotation, rotationFactor);
+		
 		if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) {
 			Move(currentDirection);
 		}
