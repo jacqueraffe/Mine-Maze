@@ -5,14 +5,14 @@ using UnityEngine;
 public class GameManager : MonoBehaviour {
 
 	public Maze mazePrefab;
-
+	public Player playerPrefab;
 	private Maze mazeInstance;
 	
-	public Player playerPrefab;
 
 	private Player playerInstance;
 
 	private void Start () {
+		print("Game Manager start");
 		StartCoroutine(BeginGame());
 	}
 	
